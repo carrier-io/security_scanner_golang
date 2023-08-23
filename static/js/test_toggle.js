@@ -11,13 +11,13 @@ const GolangIntegration = {
                 config,
                 is_default,
                 selected_integration: id,
-                save_intermediates_to,
+                // save_intermediates_to,
             } = this
             return {
                 config,
                 is_default,
                 id,
-                save_intermediates_to,
+                // save_intermediates_to,
             }
         },
     },
@@ -62,7 +62,7 @@ const GolangIntegration = {
             // toggle: false,
             config: {},
             error: {},
-            save_intermediates_to: '/data/intermediates/sast',
+            // save_intermediates_to: '/data/intermediates/sast',
         })
     },
     template: `
@@ -77,7 +77,7 @@ const GolangIntegration = {
             </div>
             <div class="form-group">
                 <form autocomplete="off">
-                    <h9>Save intermediates to</h9>
+                    <!--<h9>Save intermediates to</h9>
                     <p>
                         <h13>Optional</h13>
                     </p>
@@ -85,7 +85,7 @@ const GolangIntegration = {
                         placeholder=""
                         v-model="save_intermediates_to"
                         :class="{ 'is-invalid': error.save_intermediates_to }">
-                    <div class="invalid-feedback">[[ error.save_intermediates_to ]]</div>
+                    <div class="invalid-feedback">[[ error.save_intermediates_to ]]</div>-->
                 </form>
             </div>
         </div>
@@ -94,4 +94,3 @@ const GolangIntegration = {
 
 
 register_component('scanner-golang', GolangIntegration)
-
